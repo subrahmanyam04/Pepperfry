@@ -60,7 +60,7 @@ const Wishlistsidetab = () => {
     return (
         <>
 
-            <Grid container sx={{ justifyContent: "center", marginTop: "20px" }}>
+            <Grid container sx={{ justifyContent: "center", marginTop: "20px" }} marginBottom={15}>
 
                 <Grid lg={9} md={9} sm={9.5} xs={12}  >
 

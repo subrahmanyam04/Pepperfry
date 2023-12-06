@@ -45,7 +45,7 @@ const Productscontentfooter = () => {
 
     return (
 
-        <Grid container sx={{ justifyContent: "center" }} lg={12} md={12} sm={12}>
+        <Grid container sx={{ justifyContent: "center" }} lg={12} md={12} sm={12} marginBottom={10}>
             <Grid lg={10.5} md={11} sm={11.5} xs={11.8} >
                 <Grid container lg={12} sm={12} md={12} xs={12}>
                     <Grid lg={2.3} sm={4} md={3} xs={12}>

@@ -170,7 +170,7 @@ const Tabscontentlinks = () => {
         <>
 
 
-            <Grid container lg={12} md={12} sm={12} xs={12} marginTop={2}>
+            <Grid container lg={12} md={12} sm={12} xs={12} marginTop={2} marginBottom={10}>
                 <Grid container sx={{ justifyContent: 'center' }}>
 
                     <Grid lg={10.5} md={11} sm={11} xs={11.5}>

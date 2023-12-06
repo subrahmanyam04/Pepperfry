@@ -65,7 +65,7 @@ const Homeinformation = () => {
 
     return (
         <Box sx={{ flexGrow: 1 }} >
-            <Grid container sx={{ justifyContent: "center" }}>
+            <Grid container sx={{ justifyContent: "center" }} marginBottom={20}>
 
                 {inform.map((data) => (
                     <Grid item xs={11} marginTop={1.7} >
