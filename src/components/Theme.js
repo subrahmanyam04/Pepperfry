@@ -27,7 +27,10 @@ let theme = createTheme({
     info: {
       main: "#d50000",
     },
-
+    
+    black: {
+      main: "#121212",
+    },
 
   },
   breakpoints: {

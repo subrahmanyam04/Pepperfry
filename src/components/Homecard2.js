@@ -77,7 +77,7 @@ const Homecard2 = () => {
                             <Grid item xs={1} sm={2} md={2} lg={1} >
                                 <Card invertedColors={false} orientation="vertical" size="sm" variant="plain" >
                                     <CardOverflow>
-                                        <img src={cardimg.img} alt="" width='100%' height={221.55} />
+                                        <img src={cardimg.img} alt="" width='100%' height={'100%'} />
                                         <IconButton
                                             aria-label="Like minimal photography"
                                             size="sm"

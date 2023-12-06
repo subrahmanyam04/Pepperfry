@@ -26,14 +26,23 @@ function CustomLink({ to, icon, text }) {
     const isActive = location.pathname === to;
 
     return (
+
+
         <Link to={to} style={{ textDecoration: 'none', color: isActive ? '#FF7035' : '#121212' }}>
-            <IconButton aria-label="open drawer" >
-                {icon}
-            </IconButton>
-            <Typography fontSize={{ xs: '12px' }} fontFamily={'Manrope, sans-serif'} color={isActive ? '#FF7035' : '#121212'} noWrap>
+           
+                    <IconButton aria-label="open drawer" >
+                        {icon}
+                    </IconButton>
+              
+            {/* <Grid sx={{justifyContent:'center',alignItems:"center"}} > */}
+            <Typography fontSize={{ xs: '12px' }}  fontFamily={'Manrope, sans-serif'} color={isActive ? '#FF7035' : '#121212'} noWrap>
                 {text}
             </Typography>
+            {/* </Grid> */}
         </Link>
+
+
+
     );
 }
 
@@ -47,11 +56,11 @@ const Mobilefooter = () => {
             <AppBar position="fixed" sx={{ top: 'auto', bottom: 0, backgroundColor: "white" }}>
                 <Toolbar>
 
-                    <Grid container gap={1} columns={{ xs: 12 }} >
-                        <Grid xs={2} container>
+                    <Grid container gap={1} columns={{ xs: 12 }} justify="center" alignItems="center">
+                        <Grid xs={2} >
                             <CustomLink to="/home" icon={<HomeOutlinedIcon />} text="Home" />
                         </Grid>
-                        <Grid xs={2}>
+                        <Grid xs={2} >
                             <CustomLink to="/account" icon={<PersonOutlineOutlinedIcon />} text="My Account" />
                         </Grid>
                         <Grid xs={2}>
@@ -60,7 +69,7 @@ const Mobilefooter = () => {
                         <Grid xs={2}>
                             <CustomLink to="/studios" icon={<PlaceOutlinedIcon />} text="Studios" />
                         </Grid>
-                        <Grid xs={2.5}>
+                        <Grid xs={2}>
                             <CustomLink to="/categories" icon={<CategoryOutlinedIcon />} text="Categories" />
                         </Grid>
 

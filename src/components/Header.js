@@ -46,6 +46,11 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+// import { useParams } from 'react-router-dom'
+
+
+
+    // console.log(params)
 
 // component styles functions ////////////////////////////////////////////
 
@@ -94,6 +99,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 const Header = (props) => {
 
   //navbar events //////////////////////////////// 
+  // const params = useParams()
+
+  // console.log('heder',params)
 
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -144,15 +152,19 @@ const Header = (props) => {
        
         setOpen(false);
         
+
         const name = result.user.displayName;
         const email = result.user.email;
         const profilePic = result.user.photoURL;
         const accessToken = result.user.accessToken;
+        // const displayName = result.user.displayName;
         localStorage.setItem("accesstoken", accessToken);
   
         localStorage.setItem("name", name);
         console.log("name is ", name)
         localStorage.setItem("email", email);
+        // localStorage.setItem("displayName", displayName);
+        // console.log("name is ", displayName);
         localStorage.setItem("profilePic", profilePic);
         console.log("name is ", profilePic);
       
@@ -250,6 +262,7 @@ const Header = (props) => {
   };
 
   let token = localStorage.getItem('accesstoken')
+  let name = localStorage.getItem('name')
   // console.log('tocken',tocken)
 
   const handleSignout = () => {
@@ -260,6 +273,7 @@ const Header = (props) => {
     })
   }
 
+// Toggle data
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
@@ -321,14 +335,14 @@ const Header = (props) => {
           </Typography>
 
 
-
+         {/* image icon in header */}
 
           <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block', textAlign: "center" } }}
           >
-            <Link to='/'> <img src='./assets/images/pepperfry-logo-1024x369-1024x369.png' alt='..' height='10%' width="35%" /></Link>
+            <Link to='/'> <img src='https://ii1.pepperfry.com/assets/525cc439-6893-4ba8-97bf-9e6accecf79d.png' alt='..' height='10%' width="35%" /></Link>
           </Typography>
 
 
@@ -398,8 +412,12 @@ const Header = (props) => {
                   </Box> */}
 
                   {token ? (
+                    <>
+                     <Typography color={'#121212'} fontSize={{lg:"12px",md:"10px"}} display={{sm:"none",md:"block"}}>{name}</Typography>
                     <Box sx={{ flexGrow: 0, marginRight: "15px" }}>
+                     
                       <Tooltip title="Open settings">
+                        
                         <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                           <Icon icon="iconamoon:arrow-down-2-light" color="black" width="30" height="30" />
                         </IconButton>
@@ -436,6 +454,7 @@ const Header = (props) => {
                         </MenuItem>
                       </Menu>
                     </Box>
+                    </>
                   ) : (
                     <>
                       <Grid container columns={{ lg: 12 }}>
@@ -478,7 +497,7 @@ const Header = (props) => {
 
                   {/* <Button><Link to="/" style={{ textDecoration: 'none', color: "#242424" }}><Icon icon="streamline:interface-favorite-heart-reward-social-rating-media-heart-it-like-favorite-love" color="#6b6b6b" width="25" height="25" /> </Link></Button> */}
                   {/* <ListItemText primary="sales" /> */}
-                  <Button><Link to="/" style={{ textDecoration: 'none', color: "#242424" }}><Icon icon="circum:shopping-cart" color="#6b6b6b" width="25" height="25" /> </Link></Button>
+                  <Button><Link to="/cart" style={{ textDecoration: 'none', color: "#242424" }}><Icon icon="circum:shopping-cart" color="#6b6b6b" width="25" height="25" /> </Link></Button>
                 </ListItemButton>
               </ListItem>
             </List>
@@ -501,6 +520,7 @@ const Header = (props) => {
           }}
         >
           {drawer}
+          
         </Drawer>
       </nav>
 

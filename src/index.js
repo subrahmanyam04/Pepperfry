@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Outlet } from "react-router-dom";
 import { createTheme, ThemeProvider, } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
 import { styled } from '@mui/material/styles';
@@ -185,6 +185,7 @@ root.render(
         <Provider store={store}>
           <App />
         </Provider>
+        <Outlet/>
       </BrowserRouter>
     </React.StrictMode>
   </Root>

@@ -194,7 +194,7 @@ const Findlocationhor = () => {
             <Grid container sx={{ justifyContent: 'center', marginTop: '15px' }}>
                 <Grid sm={11} xs={11} display={{ xs: 'block', sm: 'block', lg: 'none', md: 'none' }}>
                     <Grid sm={12} xs={12} >
-                        <img src="./assets/images/MicrosoftTeams-image (1).png" alt="..." style={{ height: '100% ', width: "100%" }} />
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.1882724784728!2d81.92495637419742!3d16.866578617601636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3797a8372ff79d%3A0x7c0d4df09d940932!2sActimize%20Software%20Solutions%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1688557188291!5m2!1sen!2sin" height='100%' width='100%' style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                     </Grid>
                 </Grid>
@@ -368,7 +368,7 @@ const Findlocationhor = () => {
                                         scrollbarColor: '#3498db #f1f1f1',  // WebKit browsers (Chrome, Safari)
                                         scrollbarWidth: '100px',  // Firefox
                                         // msOverflowStyle: 'none',
-                                        height: '400px', // Hide scrollbar for IE/Edge
+                                        height: '410px', // Hide scrollbar for IE/Edge
                                         width: "100%",
                                         display: 'flex',  // Make the container a flex container
                                         flexDirection: 'row',

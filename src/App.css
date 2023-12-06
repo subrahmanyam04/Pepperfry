@@ -51,11 +51,25 @@
 
 /* .swiper-slide {
   font-size: 18px;
+  width: 100px;
   height: auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 30px;
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* YourComponentStyles.css */
 
@@ -71,6 +85,8 @@
 .custom-indicator {
   background-color: red !important; /* Change the indicator color to red */
 }
+
+
 
 
 .App-link {

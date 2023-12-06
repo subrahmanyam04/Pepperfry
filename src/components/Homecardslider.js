@@ -115,7 +115,7 @@ const Homecardslider = () => {
                         src={item.img}
                         alt=""
                         width="100%"
-                        height="300"
+                        height="300px"
                       />
                       <div
                         style={{
@@ -137,8 +137,8 @@ const Homecardslider = () => {
                           fontSize: '24px', // Text size
                         }}
                       >
-                        <Typography textColor={'#FFFFFF'} fontSize={'24px'} fontFamily={'Manrope,sans-serif'}><b>{item.cityname}</b> </Typography>
-                        <Typography textAlign={'center'} textColor={'#FFFFFF'} fontSize={'14px'} fontFamily={'Manrope,sans-serif'}> <b> {item.studios} </b> </Typography>
+                        <Typography textColor={'#FFFFFF'} fontSize={{lg:"24px",md:"20px",sm:"16px"}} fontFamily={'Manrope,sans-serif'}><b>{item.cityname}</b> </Typography>
+                        <Typography textAlign={'center'} textColor={'#FFFFFF'} fontSize={{lg:"14px",md:"14px",sm:"12px"}} fontFamily={'Manrope,sans-serif'}> <b> {item.studios} </b> </Typography>
                       </div>
                     </div>
 

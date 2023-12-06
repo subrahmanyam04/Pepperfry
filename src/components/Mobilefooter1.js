@@ -95,7 +95,7 @@ const Mobilefooter1 = () => {
     return (
         <Box sx={{ flexGrow: 1 }} display={{ xs: 'block', sm: 'none', lg: 'none', md: 'none' }}>
 
-            <Grid container sx={{ justifyContent: "center", backgroundColor: "#f5f5f5" }} marginTop={20}>
+            <Grid container sx={{ justifyContent: "center", backgroundColor: "#f5f5f5" }} marginTop={10}>
 
                 <Grid item xs={11}  >
 

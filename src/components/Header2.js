@@ -7,6 +7,15 @@ import { Box } from '@mui/material';
 import { experimentalStyled as styled } from '@mui/material/styles';
 
 import Paper from '@mui/material/Paper';
+import Furniturtab from './Furnituretab';
+import Sofasandseatings from './Sofasandseatings';
+import Mattressers from './Mattressers';
+import Homedecor from './Homedecor';
+import Furnishings from './Furnishings';
+import Kitchenanddining from './Kitchenanddining';
+import Lampandliughtenings from './Lampsandlightenings';
+import Homeutility from './Homeutility';
+import Appliances from './Appliances';
 
 
 function TabPanel(props) {
@@ -121,32 +130,32 @@ const Header2 = () => {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        tab0
+       <Furniturtab/>
 
       </TabPanel>
       <TabPanel value={value} index={1}>
-        tab1
+       <Sofasandseatings/>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        tab2
+       <Mattressers/>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        tab3
+       <Homedecor/>
       </TabPanel>
       <TabPanel value={value} index={4}>
-        tab4
+        <Furnishings/>
       </TabPanel>
       <TabPanel value={value} index={5}>
-        tab5
+       <Kitchenanddining/>
       </TabPanel>
       <TabPanel value={value} index={6}>
-        tab6
+       <Lampandliughtenings/>
       </TabPanel>
       <TabPanel value={value} index={7}>
-        tab7
+       <Homeutility/>
       </TabPanel>
       <TabPanel value={value} index={8}>
-        tab8
+       <Appliances/>
       </TabPanel>
       <TabPanel value={value} index={9}>
         tab9

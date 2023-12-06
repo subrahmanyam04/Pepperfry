@@ -22,15 +22,15 @@ const Findstudio = () => {
     // })
     return (
         <div>
-            <Findbanner />
-            <Findlocation/>
-            <Findlocationhor/>
-            <Findcard />
-            <Findbrands />
-            <Findbanner2 />
-            <Findslider />
-            <Findbanner3 />
-            <Findfooter />
+            <Findbanner />         {/*Banner component in find studio page */}
+            <Findlocation/>        {/*google map component in find studio page */}
+            <Findlocationhor/>     {/*google map component for mobile screens in find studio page */}
+            <Findcard />           {/*Why Visit Us? component in find studio page */}
+            <Findbrands />         {/*Book A Free Consultation component in find studio page*/}
+            <Findbanner2 />        {/*subbanner component in find studio page */}
+            <Findslider />         {/*tslider images component in find studio page*/}
+            <Findbanner3 />        {/*sub-divided-banner component in find studio page*/}
+            <Findfooter />         {/*Footer component in find studio page*/}
             {/* <Gmaps isLoaded={isLoaded} /> */}
           
 

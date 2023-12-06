@@ -191,7 +191,7 @@ const Findlocation = () => {
 
     return (
         <Grid container sx={{ justifyContent: 'center' }} >
-            <Grid lg={9.5} md={11} sm={11} marginBottom={2} marginTop={5} display={{lg:'block',md:'block',sm:'none',xs:'none'}}>
+            <Grid lg={9.5} md={11} sm={11} marginBottom={2} marginTop={5} display={{ lg: 'block', md: 'block', sm: 'none', xs: 'none' }}>
 
                 <Grid container columns={{ lg: 12, md: 12, sm: 12 }} >
 
@@ -367,7 +367,7 @@ const Findlocation = () => {
 
                                 {/* <SwiperContainer> */}
                                 {icons.map((infor) => (
-                                    <Grid container columns={{ lg: 12, md: 12 ,sm:12}} gap={1} >
+                                    <Grid container columns={{ lg: 12, md: 12, sm: 12 }} gap={1} >
 
                                         <SwiperSlide  >
                                             {/* <Grid lg={0.5}></Grid> */}
@@ -466,8 +466,12 @@ const Findlocation = () => {
                     </Grid>
                     <Grid lg={0.4} md={0.4}></Grid>
 
+                     {/* mapping grid */}
+
                     <Grid lg={5.8} md={5.8} display={{ xs: 'none', sm: 'none', lg: 'block', md: 'block' }}>
-                        <img src="./assets/images/MicrosoftTeams-image (1).png" alt="" height={'100%'} width={'100%'} />
+                        {/* <img src="./assets/images/MicrosoftTeams-image (1).png" alt="" height={'100%'} width={'100%'} /> */}
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.1882724784728!2d81.92495637419742!3d16.866578617601636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3797a8372ff79d%3A0x7c0d4df09d940932!2sActimize%20Software%20Solutions%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1688557188291!5m2!1sen!2sin" height='100%' width='100%' style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                     </Grid>
 

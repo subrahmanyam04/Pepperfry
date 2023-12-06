@@ -64,7 +64,7 @@ const Footer = () => {
     return (
         <Box sx={{ flexGrow: 1 }} display={{ xs: 'none', sm: 'block', lg: 'block', md: 'block' }}>
 
-            <Grid container sx={{ justifyContent: "center", backgroundColor: "#f5f5f5" }} marginTop={20}>
+            <Grid container sx={{ justifyContent: "center", backgroundColor: "#f5f5f5" }} >
 
                 <Grid item xs={11}  >
 
@@ -243,7 +243,7 @@ const Footer = () => {
 
 
                         <Grid lg={7} sm={11} md={9} columns={{ xs: 0, sm: 12, md: 12, lg: 12 }} >
-                            <Grid container gap={3}>
+                            <Grid container gap={3} >
                                 <Link style={{ textDecoration: "none" }}><Typography fontSize={{ xs: '12px', lg: "14px", sm: "12px", md: "14px" }} color={'#848484'} fontFamily={'Manrope,sans-serif'}>Whitehat</Typography></Link>
                                 <Link style={{ textDecoration: "none" }}><Typography fontSize={{ xs: '12px', lg: "14px", sm: "12px", md: "14px" }} color={'#848484'} fontFamily={'Manrope,sans-serif'}>Sitemap</Typography></Link>
                                 <Link style={{ textDecoration: "none" }}><Typography fontSize={{ xs: '12px', lg: "14px", sm: "12px", md: "14px" }} color={'#848484'} fontFamily={'Manrope,sans-serif'}>Terms Of Use</Typography></Link>
@@ -252,7 +252,7 @@ const Footer = () => {
                                 <Link style={{ textDecoration: "none" }}><Typography fontSize={{ xs: '12px', lg: "14px", sm: "12px", md: "14px" }} color={'#848484'} fontFamily={'Manrope,sans-serif'}>Grievance Redressal</Typography></Link>
                             </Grid>
 
-                            <Grid lg={12} sm={12} md={12} columns={{ xs: 0, sm: 12, md: 12, lg: 4 }} textAlign={'center'}>
+                            <Grid lg={10} sm={12} md={12} columns={{ xs: 0, sm: 12, md: 12, lg: 4 }} textAlign={'center'}>
                                 <Typography fontSize={{ xs: '12px', lg: "14px", sm: "12px", md: "14px" }} color={'#848484'} fontFamily={'Manrope,sans-serif'} marginTop={1.5} width={'100%'}>© Copyright Pepperfry Limited</Typography>
                             </Grid>
                         </Grid>

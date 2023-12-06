@@ -7,19 +7,19 @@ import Wishlistsidetab from "../components/Wishlistsidetab";
 import Footer from "../components/Footer";
 import Mobilefooter from "../components/Mobilefooter";
 import Mobilefooter1 from "../components/Mobilefooter1";
+import Layout from "../components/Layout";
 
 
 const Wishlist = () => {
     return (
         <div>
-            <Timer />
-            <Header />
-            <Header1 />
-            <Header2 />
-            <Wishlistsidetab />
-            <Footer />
-            <Mobilefooter />
-            <Mobilefooter1 />
+            <Timer />              
+            <Layout>           
+                <div>          
+                    <Wishlistsidetab />  {/* wishlist tabs component*/}   
+                </div>
+            </Layout>            
+     
         </div>
     )
 }

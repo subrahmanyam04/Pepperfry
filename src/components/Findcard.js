@@ -44,7 +44,7 @@ const Findcard = () => {
 
 
         <>
-            <Typography textAlign={'center'} textColor={'#9d6a37'} fontSize={{xs:"19px",sm:"24px",md:"24px",lg:"24px"}} fontFamily={'Poppins'} sx={{ marginTop: "45px" }}>
+            <Typography textAlign={'center'} textColor={'#9d6a37'} fontSize={{xs:"19px",sm:"24px",md:"24px",lg:"24px"}} fontFamily={'Poppins'} sx={{ marginTop: "0px" }}>
                 <b>Why Visit Us?</b>
 
             </Typography>

@@ -17,30 +17,34 @@ import Footer from "../components/Footer";
 import Mobilefooter from "../components/Mobilefooter";
 import Mobilefooter1 from "../components/Mobilefooter1";
 import Timer from "../components/Timer";
+import { Outlet } from "react-router-dom";
+import Layout from "../components/Layout";
 
 
 const Home = () => {
+
   return (
-    <div>
-      <Timer />
-      <Header />
-      <Header1 />
-      <Header2 />
-      <Banner />
-      <Homecard1 />
-      <Homecard2 />
-      <Homebanner />
-      <Homecard3 />
-      <Homecardslider />
-      <Homecard4 />
-      <Homecard5 />
-      <Homecard6 />
-      <Homeinfordata />
-      <Homeinformation />
-      <Footer />
-      <Mobilefooter />
-      <Mobilefooter1 />
-    </div>
+    <>
+    <Timer />  
+    <Layout>
+      <div>
+            
+        <Banner />              {/*banner compnent in the home page */}
+        <Homecard1 />           {/*small card compnent in the home page */}
+        <Homecard2 />           {/*shop what the fry deal compnent in the home page */}
+        <Homebanner />          {/*Deal Maange More compnent in the home page */}
+        <Homecard3 />           {/*Brand Bazaar compnent in the home page*/}
+        <Homecardslider />      {/*slider compnent in the home page */}
+        <Homecard4 />           {/*tDiscover Our Newest Arrivals compnent in the home page*/}
+        <Homecard5 />           {/*Follow Home Interior Trends compnent in the home page*/}
+        <Homecard6 />           {/*Check Out These Collections compnent in the home page*/}
+        <Homeinfordata />       {/*TextInformation compnent in the home page */}
+        <Homeinformation />     {/*TextInformation compnent in the home page */}
+   
+
+      </div>
+    </Layout>
+    </>
   )
 }
 
